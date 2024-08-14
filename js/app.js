@@ -17,7 +17,7 @@ function inputFunction() {
     //trim method will replace before and after white space of given calue
 
     if (input_user.length <= 0) {
-        alert("Please enter github user name");
+        alert("You did not enter github user name");
         document.querySelector(".input_user").value = "";
         document.querySelector(".input_user").focus();
         return false;
