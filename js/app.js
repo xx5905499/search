@@ -12,7 +12,7 @@ function inputFunction() {
     //trim method will replace before and after white space of given calue
 
     if (input_user.length <= 0) {
-        alert("You did not enter github user name");
+        alert("You did not enter kirka id user name");
         document.querySelector(".input_user").value = "";
         document.querySelector(".input_user").focus();
         return false;
@@ -59,7 +59,7 @@ function fetchUser() {
         })
 
     //fetching Inventory
-    fetch(`https://api.kirka.io/api/inventory/${user_name}/repos`)
+    fetch(`https://api.kirka.io/api/${user_name}/inventory`)
         .then(response => response.json())
         .then(function (repo_data) {
             console.log(repo_data);
@@ -92,9 +92,9 @@ function fetchUser() {
                     </div>                
                     `
                     user_img.innerHTML = `<img src="images/github_logo.png">`;
-                    userName.innerHTML = `Unknown`;
-                    followers_.innerHTML = "-";
-                    follow_.innerHTML = "-";
+                    userName.innerHTML = `PoopooumgoodYT`;
+                    followers_.innerHTML = "Win rate 60";
+                    follow_.innerHTML = "";
                 } else {
                     let repo_Data = repo_data.map(item => {
                         console.log(item);
