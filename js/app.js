@@ -52,7 +52,7 @@ function fetchUser() {
             //I not testing live because unregistered user can hit data only 60 time per hour
             console.log(data);
             if (data.message === "Not Found") {
-                alert("user not found");
+                alert("User not found Or something is not working");
                 return false;
             } else {
                 user_img.innerHTML = `<img src="${data.avatar_url}">`;
