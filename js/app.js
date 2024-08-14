@@ -68,7 +68,7 @@ function fetchUser() {
                 repo_details.innerHTML = `
                 
                 <div class="item_">
-                    <div class="repo_name">No Repo Found</div>                
+                    <div class="repo_name">No kirka id Found</div>                
                 </div>
                 
                 `
@@ -86,7 +86,7 @@ function fetchUser() {
                                 <p><i class="fa fa-code-fork"></i>30</p>
                             </div>
                             <div class="info_ size">
-                                <p><i class="fa fa-file"></i>3000kb</p>
+                                <p><i class="fa fa-file"></i></p>
                             </div>
                         </div>
                     </div>                
