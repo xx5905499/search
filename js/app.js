@@ -1,4 +1,4 @@
-//https://api.github.com/users/user_name/repos
+//https://api.kirka.io/api/inventory
 //
 
 const user_img = document.querySelector(".user_img");
