@@ -64,7 +64,7 @@ function fetchUser() {
         })
 
     //fetching repo
-    fetch(`https://api.kirka.io/api/inventory/${Inventory}/repos`)
+    fetch(`https://api.github.com/users/${user_name}/repos`)
         .then(response => response.json())
         .then(function (repo_data) {
             console.log(repo_data);
