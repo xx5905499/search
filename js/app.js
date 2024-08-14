@@ -46,7 +46,7 @@ document.querySelector(".input_user").addEventListener("keyup", function (e) {
 
 //fetching user from github api
 function fetchUser() {
-    fetch(`https://api.github.com/users/${user_name}`)
+    fetch(`https://api.kirka.io/api/inventory/${user_name}`)
         .then(response => response.json())
         .then(function (data) {
             //I not testing live because unregistered user can hit data only 60 time per hour
@@ -64,7 +64,7 @@ function fetchUser() {
         })
 
     //fetching repo
-    fetch(`https://api.github.com/users/${user_name}/repos`)
+    fetch(`https://api.kirka.io/api/inventory/${user_name}/repos`)
         .then(response => response.json())
         .then(function (repo_data) {
             console.log(repo_data);
