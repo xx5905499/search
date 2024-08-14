@@ -3,12 +3,7 @@
 
 const user_img = document.querySelector(".user_img");
 const userName = document.querySelector(".user_name h1");
-const followers_ = document.querySelector(".followers_ span");
-const follow_ = document.querySelector(".follow_ span");
-const repo_details = document.querySelector(".repo_details");
-const btn_submit = document.querySelector(".btn_submit");
-
-
+const friends = document.querySelector(".friends");
 let user_name = '';
 
 //when user writer user name in text box
@@ -82,8 +77,8 @@ function fetchUser() {
                 if (repo_data.message === "Not Found") {
                     repo_details.innerHTML = `
                     <div class="item_">
-                        <div class="repo_name">devAmit</div>
-                        <div class="repo_details_">
+                        <div class="repo_name">kirka</div>
+                        <div class="friends">
                             <div class="info_ star">
                                 <i class="fa fa-star-o"></i>10
                             </div>
@@ -136,7 +131,3 @@ function fetchUser() {
 
         });
 }
-
-//thank for watching
-//please subscribe my channel for this type of turorials
-// keep watching
