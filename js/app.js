@@ -44,7 +44,7 @@ document.querySelector(".input_user").addEventListener("keyup", function (e) {
     }
 })
 
-//fetching user from github api
+//fetching inventory from Kirka api
 function fetchUser() {
     fetch(`https://api.kirka.io/api/inventory/${user_name}`)
         .then(response => response.json())
@@ -52,7 +52,7 @@ function fetchUser() {
             //I not testing live because unregistered user can hit data only 60 time per hour
             console.log(data);
             if (data.message === "Not Found") {
-                alert("User not found Or something is not working");
+                alert("inventory not found Or something is not working");
                 return false;
             } else {
                 user_img.innerHTML = `<img src="${data.avatar_url}">`;
@@ -63,7 +63,7 @@ function fetchUser() {
             }
         })
 
-    //fetching repo
+    //fetching Inventory
     fetch(`https://api.kirka.io/api/inventory/${user_name}/repos`)
         .then(response => response.json())
         .then(function (repo_data) {
