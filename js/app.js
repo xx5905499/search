@@ -97,9 +97,9 @@ function fetchUser() {
                     </div>                
                     `
                     user_img.innerHTML = `<img src="images/github_logo.png">`;
-                    userName.innerHTML = `devAmit`;
-                    followers_.innerHTML = "500";
-                    follow_.innerHTML = "50";
+                    userName.innerHTML = `Unknown`;
+                    followers_.innerHTML = "-";
+                    follow_.innerHTML = "-";
                 } else {
                     let repo_Data = repo_data.map(item => {
                         console.log(item);
