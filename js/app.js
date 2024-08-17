@@ -1,4 +1,4 @@
-//https://api.kirka.io/api/inventory
+//https://api2.kirka.io/api/wWWNwnmM/
 //
 
 const user_img = document.querySelector(".user_img");
@@ -41,7 +41,7 @@ document.querySelector(".input_user").addEventListener("keyup", function (e) {
 
 //fetching inventory from Kirka api
 function fetchUser() {
-    fetch(`https://api.kirka.io/api/inventory/${user_name}`)
+    fetch(`https://api2.kirka.io/api/wWWNwnmM/${user_name}`)
         .then(response => response.json())
         .then(function (data) {
             //I not testing live because unregistered user can hit data only 60 time per hour
@@ -59,7 +59,7 @@ function fetchUser() {
         })
 
     //fetching Inventory
-    fetch(`https://api.kirka.io/api/${user_name}/inventory`)
+    fetch(`https://api.kirka.io/api/inventory`)
         .then(response => response.json())
         .then(function (repo_data) {
             console.log(repo_data);
